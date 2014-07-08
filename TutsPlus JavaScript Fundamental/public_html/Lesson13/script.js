@@ -30,7 +30,9 @@ document.body.appendChild(apTag);
 alert(taglist.length); //6
 
 */
-
+/*
+ * This is Exercise File for Test Git hub push.
+ */
 var currentTag = document.querySelectorAll("p");
 alert(currentTag.length);
 
