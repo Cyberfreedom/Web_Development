@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Create Object</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>JavaScript Create Object</div>
+        <script type="text/javascript">
+//---------------Creat an Object Example 01---------------------- ----  
+//         
+//           var employe = new Object;
+//            employe.Name = "JOHN";
+//            employe.EmpNO = 16468;
+//            employe.Age = 25;
+//            employe.Designation = "Executive";
+//            
+//            document.write(employe.Name); 
+//                       
+//---------------Creat an Object Example 02---------------------------
+
+//               var employe = {
+//                   Name:"Pathor",
+//                   EmpNO:16468,
+//                   Age:25,
+//                   Designation:"Executive"
+//               };
+//           document.write(employe.Name);
+
+//---------------Creat a Method Example 03---------------------------
+
+            function employe(name, empNo, age, designation) {
+                this.name = name;
+                this.empNo = empNo;
+                this.age = age;
+                this.designation = designation;
+            }
+            //function for employeinfo.
+            function employeinfo(name){
+                document.write("<br>");
+                document.write(name.name+" "+name.empNo+" "+name.age+" "+name.designation);
+                document.write("<br>");
+            }
+
+            var JOHN = new employe("JOHN", 16468, 25, "JrExecutive");
+            var Isha = new employe("Isha", 16968, 24, "SuperVisor");
+            var Zinnah = new employe("zinnah", 1008, 48, "A.Manager");
+
+            document.write(Zinnah.name+" "+Zinnah.empNo+" "+Zinnah.age+" "+Zinnah.designation);
+            
+            employeinfo(JOHN);
+            employeinfo(Isha);
+            employeinfo(Zinnah);
+        </script>
+    </body>
+</html>

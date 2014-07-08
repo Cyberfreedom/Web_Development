@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Get Elements By TAG Name</title>
+    </head>
+    <body>
+        <div id="main">
+            <p>Dummy 01 Test For Paragraph DOM Testing..</p>
+            <p>Dummy 02 Test For Paragraph DOM Testing..</p>
+            <p>Dummy 03 Test For Paragraph DOM Testing..</p>
+        </div>
+        
+        <div id="test">
+            <h1>Dummy 01 Test For H1 DOM Testing..</h1>
+            <h1>Dummy 02 Test For H1 DOM Testing..</h1>
+            <h1>Dummy 03 Test For H1 DOM Testing..</h1>
+        </div>
+
+        <script>
+            var x = document.getElementById("main");
+            var y = x.getElementsByTagName("p");  
+            y[1].innerHTML = "This is InnerHTML";
+            
+            document.getElementsByTagName("h1")[2].innerHTML = "Oparation Successful Tag InnnerHTML";
+            
+            
+        </script>
+    </body>
+</html>

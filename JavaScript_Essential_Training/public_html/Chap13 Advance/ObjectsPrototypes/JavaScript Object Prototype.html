@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JavaScript Object ProtoType</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>JavaScript Object</div>
+        <script type="text/javascript">
+            function Player(name, age, score, rank) {
+                this.name = name;
+                this.age = age;
+                this.score = score;
+                this.rank = rank;
+            }
+            Player.prototype.playerInfo = function() {
+                console.log("My Name is : ", this.name);
+                console.log("My Age is : ", this.age);
+                console.log("My Score is : ", this.score);
+                console.log("My Rank is : ", this.rank);
+            };
+            var nahid = new Player("Nahid", "22", "555", "5");
+            var sajib = new Player("Sajib", "22", "555", "5");
+            var kamal = new Player("Kamal", "22", "555", "5");
+            
+            nahid.playerInfo();
+            sajib.playerInfo();
+            kamal.playerInfo();
+        </script>
+    </body>
+</html>

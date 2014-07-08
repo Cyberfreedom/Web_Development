@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JavaScript Function</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>JavaScript Function</div>
+        <script type="text/javascript">
+            var result; //create Globel variable.
+            function myFunction(x, y, z) {
+                result = x + y + z; //function use Globel variable localy.
+                return result;
+//                console.log(result);
+            }
+            
+            //Call function.
+            var total = myFunction(55, 66, 33);
+            document.writeln("Result by Return value :"+total);
+            document.write("<br>");
+            document.writeln("Result by Global Variavle :"+result);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Form Validation</title>
+        <script type="text/javascript">
+
+            function validForm() {
+                document.getElementById("formValidation").onsubmit = function() {
+
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var errMsg = document.getElementById("errorMessage");
+                    
+                    if (name === "" || email === "") {
+                        errMsg.innerHTML = "Please Enter Your Name and Email";
+                        alert("Please Enter Your Name and Email");
+                        return false;
+                    }
+                    else {
+                        errMsg.innerHTML = "";
+                        return true;
+                    }
+                };
+
+            }
+
+
+            window.onload = function() {
+                validForm();
+            };
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1>JavaScript Form Validation</h1>
+        </div>
+        <form id="formValidation" name="formValidation" method="get" action="PreventSubmission/thanks.htm">
+            <fieldset id="personalData">
+                <legend><strong> Personal Information</strong></legend>
+                <p>
+                    <label for="name">Name </label>
+                    <input type="text" name="name" id="name" tabindex="0">
+                </p>
+                <p>
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" tabindex="1">
+                </p>
+                <p>
+                    <label for="submit">Submit </label>
+                    <input type="submit" name="submit" id="submit" tabindex="99">
+                </p>
+                <p><span id="errorMessage" style="color: red"></span></p>
+            </fieldset>
+
+        </form>
+    </body>
+</html>

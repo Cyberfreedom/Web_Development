@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript User Exercise</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            "use strict";
+            function prepareWindow() {
+                "use stret";
+                var massageWindow = document.getElementById("massage");
+                var myRE = new RegExp("World");
+                var myString = "Welcome To my Digital World";
+
+                if (myRE.test(myString)) {
+                    massageWindow.innerHTML = "Yes it is Match";
+                } else {
+                    massageWindow.innerHTML = "Sorry RegExp does't Match";
+                }
+            }
+
+            window.onclick = function() {
+                prepareWindow();
+            };
+        </script>
+    </head>
+    <body>
+        <div><p id="massage"></p></div>
+    </body>
+</html>
