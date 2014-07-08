@@ -1,12 +1,23 @@
-var names = ["Jeremy", "Jeffrey"],
-    names2 = ["Jennifer", "Jackie"];
-    
-var people = names.concat(names2);
+/*
+ var names = ["Jeremy", "Jeffrey"],
+ names2 = ["Jennifer", "Jackie"];
+ var people = names.concat(names2);
+ var joined = people.join(", ");
+ var reversed = people.reverse();
+ var sorted = people.sort();
+ 
+ alert(sorted);
 
-var joined = people.join(", ");
+ */
+//User Exercise
+var newArray = ["jQuery","JavaScript","John"];
+newArray[4] = "jQueryNew";
 
-var reversed = people.reverse();
+newArray[newArray.length] = "Add New Array1";
+newArray[newArray.length] = "Add New Array2";
+newArray[newArray.length] = "Add New Array3";
+var ArrayLength = newArray.length;
 
-var sorted = people.sort();
-
-alert(sorted);
+console.log("Arrays Lenght  :"+ArrayLength);
+console.log("Arrays Value :"+newArray[1]);
+document.getElementById("massage").innerHTML = newArray;
