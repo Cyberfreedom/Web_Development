@@ -40,3 +40,7 @@ var createTag = document.createElement("p");
 var appendTag = document.body.appendChild(createTag);
 
 alert(currentTag.length);
+
+/*
+ * This is End Comment Test For Git Test.
+ */
