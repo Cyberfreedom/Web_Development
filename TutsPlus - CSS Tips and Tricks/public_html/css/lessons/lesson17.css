@@ -1,0 +1,53 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Lesson 17
+ * ----------------------------------------------------------------------------------------
+ */
+
+/*table {
+	border: 2px solid #EAEAEA;
+}
+
+	td,
+	th {
+		border: 1px solid #EAEAEA;
+		padding: 1em;
+	}
+
+	th {
+		text-align: left;
+	}
+
+	tr:nth-child(even) {
+		background-color: #FAFAFA;
+	}
+
+li:nth-child(2n) {
+	color: blue;
+}*/
+
+table{
+    background: #ddd;
+}
+table tr{
+    background: lightyellow;
+}
+table td{
+    background: lightgreen;
+}
+tr:nth-child(even){
+    background: lightpink;
+}
+ul{
+    background: lightpink;
+    list-style: none;
+}
+ul+li{
+    margin-left: -10px
+}
+
+li:nth-child(even){
+    background: lightgreen;
+    display: block;
+}
+
