@@ -1,29 +1,45 @@
-
-//Protected Function
+//JavaScript Math Object
 (function() {
-    var example = function() {
-//        var myArray = [10, 12, 16, 19, 18, 111, 5555];
-
-        var pr01 = 10;
-        var pr02 = 11;
-        var pr03 = 9;
-        var pr04 = 17;
-        var minvalue = Math.min(pr01, pr02, pr03, pr04);
-
-        var maxvalue = Math.max(pr01, pr02, pr03, pr04);
-
-        document.getElementById("massage").innerHTML = Math.pow(3, 3);
-        document.getElementById("massage1").innerHTML = Math.sqrt(3, 3);
-        document.getElementById("massage2").innerHTML = Math.min(minvalue);
-        document.getElementById("massage3").innerHTML = Math.max(maxvalue);
-        document.getElementById("massage4").innerHTML = Math.PI;
-        document.getElementById("massage5").innerHTML = Math.random();  //rendom code generat by 
-        document.getElementById("massage6").innerHTML = Math.random() * 50 + 1; //random code generator 1 to 50;
-        document.getElementById("massage7").innerHTML = Math.abs(-7.23);
-        document.getElementById("massage8").innerHTML = Math.round(9.31);
-        document.getElementById("massage9").innerHTML = Math.ceil(9.99);
-        console.log(Math.sin(3));
+    var example01 = function() {
+        var currentDate = new Date();
+        alert("Current Date :" + currentDate);
+        var castomDate = new Date(1988, 7, 20);
+        alert("Castom Date :" + castomDate);
+        var castomDateTime = new Date(1988, 7, 20, 0, 1, 5);
+        alert("Castom Date and Time :" + castomDateTime);
+        alert(date.getFullYear());
     };
-    example();
+    var example02 = function() {
+        var date = new Date();
+        var currentMonth = date.getMonth();
+        var monthDisplay = currentMonth + 1;
+        // Future 15 years.
+        var fullTime = date.getTime();
+        var futureTime = fullTime + 473040000000;
+        var futureDate = new Date(futureTime);
+        
+        
+        var monthArray = [
+            "Janualry",
+            "February",
+            "March",
+            "Aril",
+            "May",
+            "Jun",
+            "July",
+            "August",
+            "Septembar",
+            "Octobar",
+            "NovemBar",
+            "Decembar"
+        ];
+        alert(date);
+        alert(fullTime);
+        alert(futureDate);
+        alert(monthArray[monthDisplay]);
+
+    };
+//    example01();
+    example02();
 
 }());
