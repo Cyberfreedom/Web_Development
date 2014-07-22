@@ -1,0 +1,70 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Lesson 12
+ * ----------------------------------------------------------------------------------------
+ */
+
+/*.arrow {
+	height: 0;
+	margin-bottom: 1em;
+	width: 0;
+}
+
+.up {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 17px solid red;  (border-left + border-right) * 0.866 
+}
+
+.down {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid blue;
+}
+
+.left {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid green;
+}
+
+.right {
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 52px solid gray;  (border-left + border-right) * 0.866 
+
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}*/
+
+/*
+********************
+* Users Exercise.
+********************
+*/
+.arrow{
+    height: 0;
+    width: 0;
+    margin: 15em;
+
+}
+.up{
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid green;
+    -webkit-transform: rotate(355deg);
+}
+.down{
+    border-top: 100px solid blue;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+
+.left{
+    border-top: 100px solid transparent;
+    border-right: 100px solid red;
+    border-bottom: 100px solid transparent;
+}

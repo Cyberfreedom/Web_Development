@@ -1,0 +1,64 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Lesson 8
+ * ----------------------------------------------------------------------------------------
+ */
+/*
+input[type="text"],
+textarea {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+        padding: .5em;
+        transition: box-shadow 2s ease-in-out;
+}
+
+label {
+        display: block;
+}
+
+input[type="text"]:hover,
+textarea:hover {
+        box-shadow: 0 0 3px rgba(116, 185, 239, .7);
+        transition: box-shadow .2s ease-in-out;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+        box-shadow: 0 0 3px rgba(116, 185, 239, 1);
+        border-color: #74B9EF;
+}*/
+
+
+/*
+********************
+* User Exercise Area.
+********************
+*/
+
+input[type=text],
+textarea{
+    padding: .5em;
+    outline:none;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.4);
+    transition: box-shadow, background 3s ease-in-out;
+}
+
+label{
+    display: block;
+}
+
+input[type="text"]:hover,
+textarea:hover{
+    box-shadow: 1px 1px 3px rgba(237, 23,98,.5);
+    background: rgba(200,0,0,.1);
+    opacity: 50%;
+}
+input[type="text"]:focus,
+textarea:focus{
+    width: 40%;
+    background:rgba(0,200,0,.1);
+    opacity: 50%;
+    box-shadow: 1px 1px 3px rgba(24, 109,239,.1);
+}

@@ -1,0 +1,68 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Lesson 15
+ * ----------------------------------------------------------------------------------------
+ */
+
+/*.demo-container ul {
+    list-style-type: none;
+}
+
+.list-1 li {
+    background: url(bullet.png) left center no-repeat;
+    padding-left: 1em;
+}
+
+.list-2 li:before {
+    content: "";
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-color: transparent #111;  vertical horizontal 
+    border-style: solid;
+    border-width: 4px 0 4px 6px;
+    margin-right: .5em;
+}
+
+.list-3 li:before {
+    content: "";
+    display: inline-block;
+    background-color: blue;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0 .5em 1px 0;
+}*/
+
+/*
+********************
+* User Exercise.
+********************
+*/
+
+.demo-container ul{
+    list-style: none;
+}
+.list-1 li:before{
+    content: url(bullet.png) no-repeat;
+    margin-right: .5em;
+}
+.list-2 li:before{
+    content: '';
+    height: 0px;
+    width: 0px;
+    border-left: 6px solid blue;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    display: inline-block;
+    margin-right: .5em;
+}
+.list-3 li:before{
+    content: '';
+    background: green;
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right:.5em;
+}

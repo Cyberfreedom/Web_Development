@@ -1,0 +1,49 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Lesson 13
+ * ----------------------------------------------------------------------------------------
+ */
+/*
+.circle {
+	background-color: green;
+	width: 10em;
+	height: 10em;
+	border-radius: 5em;
+}
+
+.round-image {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}*/
+
+/*
+********************
+* User Exercise.
+********************
+*/
+.circle{
+    background: violet;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.round-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+    display: block;
+}
+.round-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 0 0 6px blue;
+
+}
+/* img.round-image:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}*/

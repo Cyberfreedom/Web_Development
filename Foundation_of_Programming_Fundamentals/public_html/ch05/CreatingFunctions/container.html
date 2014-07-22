@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Simple Page</title>
+        <script type="text/javascript">
+
+            function firstFunction() {
+                document.write("Hello JavaScript");
+            }
+            function secondFunction(a, b) {
+                var result = (a + b);
+                return result;
+            }
+            function userInput() {
+                var result = prompt("Enter Your Value");
+                return result;
+            }
+
+//Your Fuction Call here.
+
+            firstFunction();
+            x = secondFunction(50, 5555);
+            y = userInput();
+            z = y+"Hello";
+
+        </script>
+    </head>
+    <body>
+        <br>
+        <input type="button" onclick="alert(x)" value="5">
+        <br>
+        <input type="email" onclick="y">
+        <input  type="submit" onclick="document.write(z)">
+    </body>
+</html>

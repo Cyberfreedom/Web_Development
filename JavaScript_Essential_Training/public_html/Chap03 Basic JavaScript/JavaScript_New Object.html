@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Object Exercise</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>JavaScript Create Object</div>
+        <script type="text/javascript">
+
+            var player1 = new Object();
+            var player2 = new Object();
+
+            player1.Name = "Meradona";
+            player1.Score = 1200;
+            player1.Rank = 3;
+//            or
+            player2 = {Name: "Masi", Score: 1000, Rank: 1}; //Sortcode way.
+
+            function playerDetails(){
+                console.log(" Player Name :" + this.Name + " Player Rank :" + this. Rank +  " Player Score :"  + this.Score);
+            }
+            player1 = playerDetails;
+            player2 = playerDetails;
+            
+            playerDetails(player1);
+                
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Lesson 2
+ * ----------------------------------------------------------------------------------------
+ */
+
+/*::selection {
+	background-color: red;
+	color: white;
+}
+
+::-moz-selection {
+	background-color: red;
+	color: white;
+}*/
+
+::selection{
+    background: #b6cf7b;
+    color: white;
+    background: #b6cf7b;
+    color: white;
+}
+::-moz-selection{
+    background: red;
+    color: white;
+}

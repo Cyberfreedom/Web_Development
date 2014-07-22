@@ -1,0 +1,10 @@
+var a=50;
+var b=70;
+var mul =a*b;
+var div =a/b;
+var sub =a-b;
+var add =a+b;
+alert(mul);
+alert(div);
+alert(sub);
+alert(add);
